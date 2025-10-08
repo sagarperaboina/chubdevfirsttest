@@ -9,7 +9,8 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 // AI Routes
-x
+app.use("/api", aiRoutes);
+
 app.get("/", (req, res) => {
   res.send("AI Backend Running!");
 });
